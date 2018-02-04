@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Data
@@ -23,4 +26,7 @@ public class Track {
     private String name;
     private String instructor;
     private String location;
+
+    @OneToMany(mappedBy = "track")
+    private Set<Student> students = new HashSet<>();
 }

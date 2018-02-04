@@ -4,9 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Data
@@ -21,11 +21,11 @@ public class Student {
 
     @Id @GeneratedValue
     private Long id;
-
     private String firstName;
-
     private String lastName;
-
     private String email;
 
+    @ManyToOne
+    @JoinColumn(name = "track_id", nullable = false)
+    private Track track;
 }
