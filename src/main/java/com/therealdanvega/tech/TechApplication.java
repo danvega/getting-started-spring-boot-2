@@ -1,5 +1,6 @@
 package com.therealdanvega.tech;
 
+import com.therealdanvega.tech.config.TechElevetorProperties;
 import com.therealdanvega.tech.domain.Student;
 import com.therealdanvega.tech.domain.Track;
 import com.therealdanvega.tech.repository.StudentRepository;
@@ -7,11 +8,13 @@ import com.therealdanvega.tech.repository.TrackRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 import java.util.Arrays;
 
 @SpringBootApplication
+@EnableConfigurationProperties(TechElevetorProperties.class)
 public class TechApplication {
 
 	public static void main(String[] args) {
