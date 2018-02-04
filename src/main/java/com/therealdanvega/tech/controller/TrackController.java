@@ -1,7 +1,7 @@
 package com.therealdanvega.tech.controller;
 
 import com.therealdanvega.tech.domain.Track;
-import com.therealdanvega.tech.repository.TrackRepository;
+import com.therealdanvega.tech.domain.TrackRepository;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

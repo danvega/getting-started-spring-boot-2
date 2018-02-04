@@ -1,7 +1,7 @@
 package com.therealdanvega.tech.controller;
 
 import com.therealdanvega.tech.domain.Student;
-import com.therealdanvega.tech.repository.StudentRepository;
+import com.therealdanvega.tech.domain.StudentRepository;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

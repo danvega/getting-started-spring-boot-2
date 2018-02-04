@@ -1,8 +1,9 @@
-package com.therealdanvega.tech.repository;
+package com.therealdanvega.tech.domain;
 
-import com.therealdanvega.tech.domain.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface StudentRepository extends JpaRepository<Student,Long> {
+
+    Student findByEmail(String email);
 
 }

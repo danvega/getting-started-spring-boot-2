@@ -1,4 +1,4 @@
-package com.therealdanvega.tech.repository;
+package com.therealdanvega.tech.domain;
 
 import com.therealdanvega.tech.domain.Track;
 import org.springframework.data.jpa.repository.JpaRepository;
