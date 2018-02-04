@@ -1,5 +1,6 @@
 package com.therealdanvega.tech.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -28,5 +29,6 @@ public class Track {
     private String location;
 
     @OneToMany(mappedBy = "track")
+    @JsonIgnore
     private Set<Student> students = new HashSet<>();
 }

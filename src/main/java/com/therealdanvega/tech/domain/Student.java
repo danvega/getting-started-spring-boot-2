@@ -1,5 +1,6 @@
 package com.therealdanvega.tech.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -24,5 +25,6 @@ public class Student {
 
     @ManyToOne
     @JoinColumn(name = "track_id", nullable = false)
+    @JsonIgnoreProperties("students")
     private Track track;
 }
